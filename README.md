@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/ZadireyEvgeny/Python" ><img src="https://github.com/ZadireyEvgeny/ZadireyEvgeny/blob/main/ubuntu_logo_icon_168375.svg" style="float:left"/></a>
+  <a href="https://github.com/ZadireyEvgeny" ><img src="https://github.com/ZadireyEvgeny/ZadireyEvgeny/blob/main/ubuntu_logo_icon_168375.svg" style="float:left"/></a>
 </div>
 <h2 align="center">
   Выбирай тему которая тебе интересна
