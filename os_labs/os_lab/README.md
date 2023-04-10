@@ -52,3 +52,35 @@ inventory файла: ansible -m ping nginx
         name: epel-release
         state: present
 </pre>
+После чего запустите выполнение Playbook командой: ansible-playbook epel.yml
+<pre>
+PLAY [Install EPEL Repo]
+**************************************************************
+TASK [Gathering Facts]
+****************************************************************
+ok: [nginx]
+TASK [Install EPEL Repo package from standard repo]
+***********************************
+ok: [nginx]
+PLAY RECAP
+******************************************************************
+**********
+nginx : ok=2 changed=0 unreachable=0 failed=0 skipped=
+0 rescued=0 ignored=0
+</pre>
+<h1>Шаблон</h1>
+Далее создадим файл шаблона для конфига NGINX, имя файла nginx.conf.j2
+<pre>
+events {
+ worker_connections 1024;
+}
+http {
+ server {
+   listen {{ nginx_listen_port }} default_server;
+   server_name default_server;
+   root /usr/share/nginx/html;
+   location / {
+   }
+ }
+}
+</pre>
