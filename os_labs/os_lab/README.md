@@ -12,7 +12,7 @@ Ansible требует для своей работы Python 2.6 или выше
 [webservers]
 nginx ansible_host=127.0.0.1 ansible_port=2222 ansible_private_key_file=/home/zadirei/os_lab/.vagrant/machines/nginx/virtualbox/private_key
 </pre>
-в этом файле стоит изменить параметры ansible_port и ansible_privat_key_file. Данную информацию можно посмотреть с помощью прошлой команды.
+В этом файле стоит изменить параметры ansible_port и ansible_privat_key_file. Данную информацию можно посмотреть с помощью прошлой команды.
 Чтобы убедиться, что что управляемый хост доступен, только без указания inventory файла: ansible -m ping nginx:
 <pre>nginx | SUCCESS => {
  "ansible_facts": {
