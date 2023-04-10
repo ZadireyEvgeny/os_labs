@@ -6,8 +6,8 @@
 4. Установка и настройка всего ПО должна быть обеспечена Ansible-сценарием.
 </pre>
 <h1>Начало</h1>
-Перед поднятием вагранта вам требуется изменить сам Vagrantfile, a именно в  vagrantfile в строчке ssh_pub_key = File.readlines("/home/zadirei/.ssh/id_rsa.pub").first.strip
-вместо zadirei подставить свое имя пользователя.<br>
+Перед поднятием вагранта вам требуется изменить сам Vagrantfile, a именно в  vagrantfile в строчке<br><b>ssh_pub_key = File.readlines("/home/zadirei/.ssh/id_rsa.pub").first.strip</b><br>
+вместо <em>zadirei</em> подставить свое имя пользователя.<br>
 Когда изменили Vagrantfile теперь можно проднимать сам vagrant
 <pre>vagrant up</pre>
 Следующим действием мы вводим команду ansible-playbook nginx.yml
