@@ -6,13 +6,14 @@
 4. Установка и настройка всего ПО должна быть обеспечена Ansible-сценарием.
 </pre>
 <h1>Начало</h1>
-Перед поднятием вагранта вам требуется изменить сам Vagrantfile, а именно это ssh_pub_key = File.readlines("/home/zadirei/.ssh/id_rsa.pub").first.strip.
-Вместо zadirei подставить свое имя пользователя.
-Когда изменили Vagrantfile теперь можно проднимать сам vagrant.
+Перед поднятием вагранта вам требуется изменить сам Vagrantfile, a именно в  vagrantfile в строчке ssh_pub_key = File.readlines("/home/zadirei/.ssh/id_rsa.pub").first.strip
+вместо zadirei подставить свое имя пользователя.<br>
+Когда изменили Vagrantfile теперь можно проднимать сам vagrant
+<pre>vagrant up</pre>
 Следующим действием мы вводим команду ansible-playbook nginx.yml
 Должно быть примерно так:
 <img src="https://github.com/ZadireyEvgeny/ZadireyEvgeny/blob/main/3.png">
-Если нет ошибок, то тогда можно перейти http://192.168.11.113 и проверить работает ли балансировщик.
+Сейчас можно перейти http://192.168.11.113 и проверить работает ли балансировщик.
 <p>По идее у вас должно получиться следующее:</p>
 <img src="https://github.com/ZadireyEvgeny/ZadireyEvgeny/blob/main/1.png">
 При обновлении сраницы через shift + f5  у вас должна появиться другая страница:
