@@ -10,3 +10,10 @@
 Вместо zadirei подставить свое имя пользователя.
 Когда изменили Vagrantfile теперь можно проднимать сам vagrant.
 Следующим действием мы вводим команду ansible-playbook nginx.yml
+Должно быть примерно так:
+<img src="https://github.com/ZadireyEvgeny/ZadireyEvgeny/blob/main/3.png">
+Если нет ошибок, то тогда можно перейти http://192.168.11.113 и проверить работает ли балансировщик.
+<p>По идее у вас должно получиться следующее:</p>
+<img src="https://github.com/ZadireyEvgeny/ZadireyEvgeny/blob/main/1.png">
+При обновлении сраницы через shift + f5  у вас должна появиться другая страница:
+<img src="https://github.com/ZadireyEvgeny/ZadireyEvgeny/blob/main/2.png">
