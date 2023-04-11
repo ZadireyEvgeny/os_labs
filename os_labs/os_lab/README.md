@@ -1,4 +1,4 @@
-<h1> align="center">Ansible</h1>
+<h1 align="center">Ansible</h1>
 <h1>Установка Ansible</h1>
 Ansible требует для своей работы Python 2.6 или выше.
 Если необходимо, установите Ansible (yum install или apt install) и убедитесь что он корректно работает.
